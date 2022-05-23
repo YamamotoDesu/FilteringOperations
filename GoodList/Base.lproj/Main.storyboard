@@ -19,12 +19,15 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HqD-wj-pMc">
                                 <rect key="frame" x="69" y="114" width="276" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
+                                    <segment title="All"/>
                                     <segment title="High"/>
                                     <segment title="Medium"/>
                                     <segment title="Low"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" systemColor="linkColor"/>
+                                <connections>
+                                    <action selector="priorityValueChangedWithSegmentedControll:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rrz-KQ-ssK"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TaskViewCell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8kK-xa-Qae">
                                 <rect key="frame" x="0.0" y="169" width="414" height="693"/>

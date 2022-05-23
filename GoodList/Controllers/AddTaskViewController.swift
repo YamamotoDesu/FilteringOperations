@@ -29,6 +29,7 @@ class AddTaskViewController: UIViewController {
         
         let task = Task(title: title, priority: priority)
         taskSubject.onNext(task)
+        print("task",task)
         
         
         self.dismiss(animated: true, completion: nil)
